@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>reservation</title>
+   
+
+    <style>
+      body {
+  background-image: url("bg-cover-video-02.jpg.webp");
+  
+  background-repeat: no-repeat;
+  /* background-position: right top;
+  margin-right: 200px; */
+  background-attachment: fixed;}
+       
+        .navbar {
+            /* border: 1px solid rgb(253, 7, 81); */
+            width: 100%;
+            display: flex;
+            margin: auto;
+            background-color: rgb(34, 37, 37);
+            position: sticky;
+            top: 0;
+        }
+        .navbar:hover {
+            /* background-color: rgb(130, 20, 233); */
+            text-decoration: underline;
+            /* font-size: large; */
+        }
+         ul,li {
+            display: inline-block;
+            margin-left: 50px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            color: rgb(245, 247, 247);
+            /* border: 1px rgb(9, 231, 38); */
+        }
+        li:hover {
+            color: rgb(243, 239, 240);
+            text-decoration: underline;  
+        }
+        .logomain{
+            margin-left: 200px;
+            margin-top: 10px; 
+            /* border: 1px tomato; */
+        }
+        .logo:hover{
+            background-color: tomato;
+        }
+        
+       
+.logo img{
+    width: 30px;
+    height: 30px;
+    /* border: 1px gray; */
+    
+}
+* {box-sizing: border-box}
+body {font-family: Verdana, sans-serif; margin:0}
+.mySlides {display: none;}
+.mySlides img{
+    width: 100%;
+    height: 600px;
+}
+img {vertical-align: middle; }
+
+/* Slideshow container */
+.slideshow-container {
+  width: 100%;
+  height: 600px;
+  /* height: 200px; */
+  /* position: relative; */
+  /* margin: auto; */
+  /* border: 1px solid red; */
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+.middiv{
+  width: 100%;
+  height: 400px;
+  text-align: center;
+  align-content: center;
+  
+  background-color: rgb(242, 238, 245);
+
+}
+input{
+  width: 200px;
+  height: 50px;
+  border-radius: 20px;
+  background-color: transparent;
+  
+
+}
+select{
+  width: 200px;
+  height: 50px;
+  border-radius: 20px;
+  background-color: transparent;
+  
+
+}
+.sbmt{
+  width: 600px;
+  height: 50px;
+  border-radius: 20px;
+  text-decoration: underline;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 28px;
+  font-style: italic;
+  font-weight: bold;
+
+}
+.sbmt:hover{
+  color: yellowgreen;
+  background-color: aqua;
+}
+.text{
+  width: 100%;
+  height: 400px;
+  background-color: whitesmoke;opacity: 70%;
+  border: 5px red;
+  display: flex;
+}
+.left>span{ color: rgb(0, 0, 206);
+font-size: larger;
+font-weight: bolder;
+}
+.left{
+  width: 500px;
+  height: 400px;
+  /* border: 5px rgb(58, 167, 8); */
+  text-align: center;
+  align-content: center;
+  /* background-color: aqua; */
+  display: inline-block;
+  margin-left:  200px;
+  opacity: 70%;
+}
+.right{
+  width: 500px;
+  height: 400px;
+  /* border: 5px rgb(58, 167, 8); */
+  text-align: center;
+  /* background-color: aqua; */
+  align-content: center;
+  display: inline-block;
+  margin-left: 200px;
+  opacity: 70%;
+}
+.right>span{ color: rgb(0, 0, 206);
+font-size: larger;
+font-weight: bolder;
+}
+
+/* Fading animation */
+/* .fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+/* @media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+div {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  position: relative;
+  animation-name: example;
+  animation-duration: 4s;
+  animation-delay: -2s;
+} */
+
+/* @keyframes example {
+  0%   {background-color:red; left:0px; top:0px;}
+  25%  {background-color:yellow; left:200px; top:0px;}
+  50%  {background-color:blue; left:200px; top:200px;}
+  75%  {background-color:green; left:0px; top:200px;}
+  100% {background-color:red; left:0px; top:0px;}
+} */ 
+#main {
+            width: 100%;
+            height: 400px;
+            /* border: 1px red; */
+            background-color: rgb(51, 70, 70);
+            /* margin-left: 5px; */
+            display: flex;
+            
+            text-align: center;
+            
+        }
+        #t{
+            width: 30%; height: 400px;
+            text-align: left;
+            padding-left:50px ;
+            margin-left: 40px;
+            
+            display: inline-block;
+            /* border: 1px solid black; */
+        }
+        /* img{width: 100px;
+        height: 100px;}
+        button{align-content: ;} */
+
+        .grid-container {
+  display: grid;
+  grid-template-columns: 100px 100px 100px 100px;
+  grid-template-rows: 100px 100px 100px ;
+  background-color: transparent;
+  
+}
+.grid-item {
+  /* background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(0, 0, 0, 0.8); */
+  /* padding: 0px
+  font-size: 30px;
+  text-align: center; */
+  border: 2px solid black;
+}
+.grid-item>IMG{
+  width: 100px;
+  height: 100px;
+}
+</style>
+        
+        
+        </head>
+        <body>  
+                <div class="navbar">
+                   
+                     <div class="logomain">
+                    <a href="index.html">
+                        <img src="images/logo.png.webp" alt="">
+                    </a>
+                    <UL>
+                        <li><a href="index.html" >HOME</a></li>
+                        <li>MENU</li>
+                        <li><a href="reservation.html">RESERVATION</a></li>
+                        <li><a href="gallery.html">GALLERY</a></li>
+                        <li><a href="about.html">ABOUT</a></li>
+                        <LI><a href="blog.html">BLOG</a></LI>
+                        <li><a href="contact.html">CONTACT</a></li>
+                    
+                        <li class="logo"><img src="images/fbb.png"></li>
+                        <li class="logo"><img src="images/inst.png"></li>
+                        <li class="logo"><img src="images/lnkn.png"></li>
+                        <li class="logo"><img src="images/twet.png"></li>
+                
+        </UL>
+        
+                </div></div>
+                <div class="slideshow-container">
+
+                    <div class="mySlides">
+                      
+                      <img src="images/slide1.jpg" >
+                      
+                    </div>
+                    
+                    <div class="mySlides">
+                      
+                      <img src="images/slide2.jpg" >
+                      
+                    </div>
+                    
+                    <div class="mySlides">
+                      
+                      <img src="images/slide3.jpg" >
+                      
+                    </div>
+                    
+                    <a class="prev" onclick="plusSlides(-1)">❮</a>
+                    <a class="next" onclick="plusSlides(1)">❯</a>
+                    
+                    </div>
+                    <div class="middiv"><h2 style="color: rgb(58, 167, 8); font-family: 'Times New Roman', Times, serif;font-style: italic; ">RESERVATION </h2><h1 style="color: gray; font-family: Arial, Helvetica, sans-serif; font-size: 32px; font-weight: bold;">BOOK A TABLE</h1>
+                      <div>
+                        <form action="/action_page.php">
+                          <label for="date">DATE</label>
+                          <input type="DATE" id="date" name="date" placeholder="date">
+                      
+                          <label for="time">TIME.</label>
+                          <input type="time" id="time" name="time" placeholder="time">
+                      
+                          <label for="person">PERSON</label>
+                          <select id="PERSON" name="PERSON">
+                            <option value="1 PERSON">ONE PERSON</option>
+                            <option value="2 PERSON">TWO PERSON</option>
+                            <option value="3 PERSON">THREE PERSON</option>
+                            <option value="4 PERSON">FOUR PERSON</option>
+                            <option value="5 PERSON">FIVE PERSON</option>
+                            <option value="6 PERSON">SIX  PERSON</option>
+                          </select><br><br>
+                          <label for="NAME">NAME</label>
+                          <input type="text" id="name" name="text" placeholder="NAME">
+                          <label for="phone">PHONE</label>
+                          <input type="number" id="phone" name="PHONE" placeholder="phonenumber">
+                          <label for="email">E-mail</label>
+                          <input type="email" id="email" name="email" placeholder="E-mail">
+                        </form>
+                     <br>
+
+                     <button class="sbmt">Book my table for this date</button>
+                  </div> </div>
+                  <div class="text">
+                    <div class="left"><span>RESERVE BY PHONE</span><p style="font-weight: bolder;"  >Donec quis euismod purus. Donec feugiat ligula rhoncus, varius nisl sed, tincidunt lectus. Nulla vulputate , lectus vel volutpat efficitur, orci lacus sodales sem, sit amet quam: (001) 345 6889</p></div>
+                    <div class="right"><span>FOR EVENT BOOKING</span><p style="font-weight: bolder;">Donec feugiat ligula rhoncus: (001) 345 6889 , varius nisl sed, tinci-dunt lectus sodales sem.</p></div>
+                  </div>
+
+                  <div id="main">
+                    <div id="t">
+                        
+                        <h4 style="color: aliceblue;">CONTACT US</h4>
+                        
+                       <p style="font-size: small;"> <img src="images/pilocation.png" width="25px;" height="25px;" > 8th floor, 379 Hudson St, New York, NY 10018</p>
+                        <img src="images/picphone.png" width="25px;" height="25px;" >  (+1) 96 716 6879</p>
+                        <img src="images/picemail.png" width="25px;" height="25px;" >  contact@site.com</p>
+                        <h4 style="color: aliceblue;">OPENING TIME</h4>
+                        <H6> 9:AM -10 PM<BR> EVERY DAY</H6>
+                    </div>
+                    <div id="t">
+                        
+                        <h4 style="color: aliceblue;">LATEST TWITTER</h4>
+                        
+                        <p style="color: red;"><img src="images/PICTWITER.png" width="25px;" height="25px;" > @colorlib</p>
+                        <p style="font-size: smaller;">Activello is a good option. It has a slider built into that displays the featured image in the slider.</p>
+                        <p style="font-size: smaller;">https://buff.ly/2zaSfAQ</p>
+                        <p style="font-size: smaller;">21-Dec-2017</p>
+                        <p style="color: red;"><img src="images/PICTWITER.png" width="25px;" height="25px;" > @colorlib</p>
+                        <p style="font-size: smaller;">Activello is a good option. It has a slider built into that displays the featured image in the slider.</p>
+                        <p style="font-size: smaller;">https://buff.ly/2zaSfAQ</p>
+                        <p style="font-size: smaller;">21-Dec-2017</p>
+
+                    </div>
+                    <div id="t">
+                      <h4 style="color: aliceblue;">GALLERY</h4>
+                      <div class="grid-container">
+                        <div class="grid-item" ><img src="images/photo-gallery-thumb-16.jpg"></div>
+                        <div class="grid-item"><img src="images/photo-gallery-thumb-17.jpg"></div>
+                        <div class="grid-item"><img src="images/photo-gallery-thumb-18.jpg"></div>  
+                        <div class="grid-item"><img src="images/photo-gallery-thumb-19.jpg"></div>
+                        <div class="grid-item"><img src="images/photo-gallery-thumb-20.jpg"></div>
+                        <div class="grid-item"><img src="images/photo-gallery-thumb-21.jpg"></div>  
+                        <div class="grid-item"><img src="images/photo-gallery-thumb-01.jpg"></div>
+                        <div class="grid-item"><img src="images/photo-gallery-thumb-02.jpg"></div>
+                        <div class="grid-item"><img src="images/photo-gallery-thumb-03.jpg"></div>  
+                        <div class="grid-item"><img src="images/photo-gallery-thumb-04.jpg"></div>
+                        <div class="grid-item"><img src="images/photo-gallery-thumb-05.jpg"></div>
+                        <div class="grid-item"><img src="images/photo-gallery-thumb-06.jpg"></div>  
+                      </div>  
+                    </div>
+                </div>
+                      
+                <div class="navbar">
+                  <ul>
+                    <li class="logo"><img src="images/fbb.png"></li>
+                     <li class="logo"><img src="images/inst.png"></li>
+                     <li class="logo"><img src="images/lnkn.png"></li>
+                     <li class="logo"><img src="images/twet.png"></li>
+                  </ul>
+                 
+                 
+                 
+                    
+             
+     <div class="logomain">Copyright © 2018 All rights reserved | This template is made with  by Colorlib
+     </div></div>
+                   
+</body>
+
+
+
+
+
+
+
+
+
+
+
+<script>
+let slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+
+</html> 

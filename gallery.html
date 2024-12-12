@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>gallery</title>
+   
+
+    <style>
+       
+       .navbar {
+            /* border: 1px solid rgb(253, 7, 81); */
+            width: 100vw;
+            display: flex;
+            /* margin: auto; */
+            background-color: rgb(34, 37, 37);
+            position: sticky;
+            top: 0;
+        }
+        /* .navbar:hover {
+            background-color: rgb(130, 20, 233);
+            text-decoration: underline;
+            font-size: large;
+        } */
+         ul,li {
+            display: inline-block;
+            margin-left: 50px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            
+            color: azure;
+        }
+        /* li:hover {
+            color: rgb(248, 10, 41);
+            text-decoration: underline;
+            background-color: brown;
+        } */
+        .main{
+            width: 100vw;
+            height: 500px; 
+            /* border: 1px solid black; */
+            background-image: url(images/wineglassedit.png);
+             background-size: cover;
+            /* background-repeat: no-repeat;  */
+           
+        }
+        
+        .logomain{
+            margin-left: 200px;
+            margin-top: 10px; 
+        }
+        .logo:hover{
+            background-color: tomato;
+        }
+        
+       
+.logo img{
+    width: 30px;
+    height: 30px;
+    
+}
+ .captgallery{
+    
+    width: 100vw;
+    color: aliceblue;
+    text-align: center;
+    /* padding: 100px;
+    margin-left: 400px; */
+    margin-top: 200px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 48px;
+    font-weight: bolder;
+    
+}
+.button-container {
+  display: flex;         
+  justify-content: center;
+    /* margin-left: 100px;         */
+  align-content: center;
+  /* margin-left: 500px;
+  margin-top: 100px; */
+  background-color: aliceblue; opacity: 70%;
+  width: 100vw;
+  height: 200px;
+  /* padding-left:500px; */
+  padding-top: 100px;
+  
+}
+
+button {
+    width: 100px; 
+    height: 50px;
+  margin-left: 10px;
+  font-size: 12px;     
+  cursor: pointer;     
+  background-color: #8caa8e;
+  color: rgb(17, 17, 17);          
+  border: none;          
+  border-radius: 10px;    
+  /* transition: background-color 0.3s ease; Optional: smooth transition on hover */
+
+}
+
+button:hover {
+  background-color: #45a049; /* Darker button color on hover */
+}
+body {
+  background-image: url("bg-cover-video-02.jpg.webp");
+  background-repeat: no-repeat;
+  background-attachment: fixed;}
+
+  .grid-containar1 {
+  display: grid;
+  grid-template-columns: 33.3% 33.3% 33.3%;
+  grid-template-rows: auto;
+  background-color: transparent;
+  
+}
+.gridt-item {
+  /* background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(0, 0, 0, 0.8); */
+  /* padding: 0px
+  font-size: 30px;
+  text-align: center; */
+  border: 10px solid black;
+}
+.gridt-item>IMG{
+  width: 100%;
+  height: 100%;
+}
+
+#main {
+            width: 100%;
+            height: 400px;
+            /* border: 1px red; */
+            background-color: rgb(51, 70, 70);
+            /* margin-left: 5px; */
+            display: flex;
+            
+            text-align: center;
+            
+        }
+        #t{
+            width: 30%; height: 400px;
+            text-align: left;
+            padding-left:50px ;
+            margin-left: 40px;
+            
+            display: inline-block;
+            /* border: 1px solid black; */
+        }
+        /* img{width: 100px;
+        height: 100px;}
+        button{align-content: ;} */
+
+        .grid-container {
+  display: grid;
+  grid-template-columns: 100px 100px 100px 100px;
+  grid-template-rows: 100px 100px 100px ;
+  background-color: transparent;
+  
+}
+.grid-item {
+  /* background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(0, 0, 0, 0.8); */
+  /* padding: 0px
+  font-size: 30px;
+  text-align: center; */
+  border: 2px solid black;
+}
+.grid-item>IMG{
+  width: 100px;
+  height: 100px;
+}
+        
+        </style>
+        </head>
+        <body>
+        
+            <div class="main">
+                <div class="navbar">
+                     <div class="logomain">
+                    <a href="index.html">
+                        <img src="images/logo.png.webp" alt="">
+                    </a>
+                    <UL>
+                        <li><a href="index.html" >HOME</a></li>
+                        <li>MENU</li>
+                        <li><a href="reservation.html">RESERVATION</a></li>
+                        <li><a href="gallery.html">GALLERY</a></li>
+                        <li><a href="about.html">ABOUT</a></li>
+                        <LI><a href="blog.html">BLOG</a></LI>
+                        <li><a href="contact.html">CONTACT</a></li>
+                    
+                        <li class="logo"><img src="images/fbb.png"></li>
+                        <li class="logo"><img src="images/inst.png"></li>
+                        <li class="logo"><img src="images/lnkn.png"></li>
+                        <li class="logo"><img src="images/twet.png"></li>  
+        </UL>           
+                </div></div>
+                <div class="captgallery">
+                    GALLERY
+                </div>
+            </div>
+            <div class="button-container">
+                <button>ALL PHOTOS</button>
+                <button>INTERIOR</button>
+                <button>FOOD</button>
+                <button>EVENTS</button>
+                <button>VIP GUEST</button>
+              </div>
+              
+              
+                <div class="grid-containar1">
+                  <div class="gridt-item"><img src="images/g-image1.png"></div>
+                  <div class="gridt-item"><img src="images/g-image2.png"></div>
+                  <div class="gridt-item"><img src="images/g-image3.png"></div>  
+                  <div class="gridt-item"><img src="images/g-image4.png"></div>
+                  <div class="gridt-item"><img src="images/g-image5.png"></div>
+                  <div class="gridt-item"><img src="images/g-image6.png"></div>  
+                  <div class="gridt-item"><img src="images/g-image7.png"></div>
+                  <div class="gridt-item"><img src="images/g-image8.png"></div>
+                  <div class="gridt-item"><img src="images/g-image9.png"></div>  
+                    
+                </div>  
+                <div id="main">
+                    <div id="t">
+                        
+                        <h4 style="color: aliceblue;">CONTACT US</h4>
+                        
+                       <p style="font-size: small;"> <img src="images/pilocation.png" width="25px;" height="25px;" > 8th floor, 379 Hudson St, New York, NY 10018</p>
+                        <img src="images/phonepic.jpg" width="25px;" height="25px;" >  (+1) 96 716 6879</p>
+                        <img src="images/picemail.png" width="25px;" height="25px;" >  contact@site.com</p>
+                        <h4 style="color: aliceblue;">OPENING TIME</h4>
+                        <H6> 9:AM -10 PM<BR> EVERY DAY</H6>
+                    </div>
+                    <div id="t">
+                        
+                        <h4 style="color: aliceblue;">LATEST TWITTER</h4>
+                        
+                        <p style="color: red;"><img src="images/PICTWITER.png" width="25px;" height="25px;" > @colorlib</p>
+                        <p style="font-size: smaller;">Activello is a good option. It has a slider built into that displays the featured image in the slider.</p>
+                        <p style="font-size: smaller;">https://buff.ly/2zaSfAQ</p>
+                        <p style="font-size: smaller;">21-Dec-2017</p>
+                        <p style="color: red;"><img src="images/PICTWITER.png" width="25px;" height="25px;" > @colorlib</p>
+                        <p style="font-size: smaller;">Activello is a good option. It has a slider built into that displays the featured image in the slider.</p>
+                        <p style="font-size: smaller;">https://buff.ly/2zaSfAQ</p>
+                        <p style="font-size: smaller;">21-Dec-2017</p>
+
+                    </div>
+                    <div id="t">
+                      <h4 style="color: aliceblue;">GALLERY</h4>
+                      <div class="grid-container">
+                        <div class="grid-item" ><img src="images/photo-gallery-thumb-16.jpg"></div>
+                        <div class="grid-item"><img src="images/photo-gallery-thumb-17.jpg"></div>
+                        <div class="grid-item"><img src="images/photo-gallery-thumb-18.jpg"></div>  
+                        <div class="grid-item"><img src="images/photo-gallery-thumb-19.jpg"></div>
+                        <div class="grid-item"><img src="images/photo-gallery-thumb-20.jpg"></div>
+                        <div class="grid-item"><img src="images/photo-gallery-thumb-21.jpg"></div>  
+                        <div class="grid-item"><img src="images/photo-gallery-thumb-01.jpg"></div>
+                        <div class="grid-item"><img src="images/photo-gallery-thumb-02.jpg"></div>
+                        <div class="grid-item"><img src="images/photo-gallery-thumb-03.jpg"></div>  
+                        <div class="grid-item"><img src="images/photo-gallery-thumb-04.jpg"></div>
+                        <div class="grid-item"><img src="images/photo-gallery-thumb-05.jpg"></div>
+                        <div class="grid-item"><img src="images/photo-gallery-thumb-06.jpg"></div>  
+                      </div>  
+                    </div>
+                </div>
+                      
+                <div class="navbar">
+                  <ul>
+                    <li class="logo"><img src="images/fbb.png"></li>
+                     <li class="logo"><img src="images/inst.png"></li>
+                     <li class="logo"><img src="images/lnkn.png"></li>
+                     <li class="logo"><img src="images/twet.png"></li>
+                  </ul>
+                 
+                 
+                 
+                    
+             
+     <div class="logomain">Copyright © 2018 All rights reserved | This template is made with  by Colorlib
+     </div></div>
+                   
+</body>
+
+              
+          
+</body>
+</html>

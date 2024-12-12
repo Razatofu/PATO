@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>patoresurant</title>
+   
+
+    <style>
+        body {
+                background-image: url("images/bg-intro-04.jpg");
+             background-repeat: no-repeat;
+             background-attachment: fixed;}
+
+             .navbar {
+            
+            width: 100%;
+            display: flex;
+            margin: auto;
+            background-color:grey;
+            position: sticky;
+            top: 0;
+        }
+        .navbar:hover {
+        
+            text-decoration: underline;
+            
+        }
+         ul,li {
+            display: inline-block;
+            margin-left: 50px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            
+            color: azure;
+        }
+        li:hover {
+            color: rgb(248, 10, 41);
+            text-decoration: underline;
+            /* background-color: brown; */
+        }
+        /* .main{
+            width: 100%;
+            height: 800px; 
+            border: 1px solid black;
+            background-image: url(images/wineglassedit.png);
+             background-size: contain;
+            background-repeat: no-repeat; 
+           
+        } */
+        
+        .logomain{
+            margin-left: 200px;
+            margin-top: 10px; 
+        }
+        .logo:hover{
+            background-color: tomato;
+        }
+        
+       
+.logo img{
+    width: 30px;
+    height: 30px;
+    
+}
+*{box-sizing: border-box}
+body {font-family: Verdana, sans-serif; margin:0}
+.mySlides {display: none;}
+.mySlides img{
+    width: 100%;
+    height: 600px;
+}
+/* img {vertical-align: middle; } */
+
+/* Slideshow container */
+.slideshow-container {
+  width: 100%;
+  height: 600px;
+  /* height: 200px; */
+  /* position: relative; */
+  /* margin: auto; */
+  /* border: 1px solid red; */
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+.middiv{
+    width: 100%;
+    height: 500px;
+    /* border: 1px solid red; */
+    display: flex;
+    padding: 5px;
+    align-items: center;
+    align-content: space-around;
+    background-color: aliceblue;
+    
+    
+
+}
+.txtdiv{
+    width: 40%;
+    height: 75%;
+    /* border: 1px solid black; */
+    margin-top: 50px;
+    margin-left: 100px;text-align: center;align-content: center;
+    /* background-color: azure; */
+    
+}
+.imgdiv{
+    width: 40%;
+    height: 75%;
+    /* border: 1px solid rgb(244, 247, 244);
+    margin-top: 50px; */
+    margin-left: 100px;
+    background-size: cover;
+    border-radius: 20px;
+}
+.imgdiv>img{
+    width: 100%;
+    height: 100%;
+}
+ img:hover{ 
+    border-radius: 50%;
+    
+    
+}
+
+
+.bcard{
+    display: flex;
+    width: 100%;
+    height: 600px;
+    /* border: 1px solid red; */
+    padding-left: 30px;
+    background-color: aliceblue;
+}
+.card{
+    width: 30%;
+    height: 550px;
+    /* border: 1px solid yellow; */
+    text-align: center;
+    background-color: aliceblue;border-radius: 20px;
+    margin-top: 10px;
+    margin-left: 30px;}
+    
+.card>img{
+    width: 100%;
+    height: 300px;
+    /* border-radius: 20px; */
+
+}
+.card>button{
+    width: 200px;
+    height: 50px;
+    border: none;background-color: transparent;
+    font-size: large;
+}
+.grid-contner {
+  display: grid;
+  grid-template-columns: 300px 300px 300px;
+  grid-template-rows: 200px 200px 200px ;
+  gap: 10px;
+  background-color: #f1f4f7;
+  padding: 10px;
+  padding-left: 400px;
+}
+
+.grid-contner> div {
+  background-color: rgb(211, 18, 18);
+  /* border: 1px solid black; */
+  text-align: center;
+  font-size: 30px;
+  
+}
+#abc img{
+    width: 100%;
+    height: 100%;
+}
+
+.db1{background-color: blue;
+            
+         grid-row-start: 1;
+         border: 2px solid white; align-content: center;
+         grid-row-end: 3;
+         }
+         .db2{background-color: blue;
+            
+            grid-row-start: 1;
+            border: 2px solid white; align-content: center;
+            grid-row-end: 3;
+            }
+            .db5{background-color:;
+            
+            grid-column-start: 1;
+            border: 2px solid white;
+             align-content: center;
+            grid-column-end: 3;
+            }
+            #main {
+            width: 100%;
+            height: 400px;
+            /* border: 1px red; */
+            background-color: rgb(51, 70, 70);
+            /* margin-left: 5px; */
+            display: flex;
+            
+            text-align: center;
+            
+        }
+        #t{
+            width: 30%; height: 400px;
+            text-align: left;
+            padding-left:50px ;
+            margin-left: 40px;
+            
+            display: inline-block;
+            /* border: 1px solid black; */
+        }
+        /* img{width: 100px;
+        height: 100px;}
+        button{align-content: ;} */
+
+        .grid-container {
+  display: grid;
+  grid-template-columns: 100px 100px 100px 100px;
+  grid-template-rows: 100px 100px 100px ;
+  background-color: transparent;
+  
+}
+.grid-item {
+  /* background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(0, 0, 0, 0.8); */
+  /* padding: 0px
+  font-size: 30px;
+  text-align: center; */
+  border: 2px solid black;
+}
+.grid-item>IMG{
+  width: 100px;
+  height: 100px;
+}
+         */
+        </style>
+        </head>
+        <body> 
+                <div class="navbar">
+                   
+                     <div class="logomain">
+                    <a href="index.html">
+                        <img src="images/logo.png.webp" alt=""> </a>
+                    <UL>
+                        <li><a href="index.html" >HOME</a></li>
+                        <li>MENU</li>
+                        <li><a href="reservation.html">RESERVATION</a></li>
+                        <li><a href="gallery.html">GALLERY</a></li>
+                        <li><a href="about.html">ABOUT</a></li>
+                        <LI><a href="blog.html">BLOG</a></LI>
+                        <li><a href="contact.html">CONTACT</a></li>
+                        <li class="logo"><img src="images/fbb.png"></li>
+                        <li class="logo"><img src="images/inst.png"></li>
+                        <li class="logo"><img src="images/lnkn.png"></li>
+                        <li class="logo"><img src="images/twet.png"></li>    
+        </UL> </div></div>
+        
+        <div class="slideshow-container">
+            <div class="mySlides">  
+              <img src="images/wineglass.png" > 
+            </div>
+            <div class="mySlides">
+              <img src="images/g-image3.png" >
+            </div>
+            <div class="mySlides">
+              <img src="images/lunch-01.jpg" >
+            </div>
+            <a class="prev" onclick="plusSlides(-1)">❮</a>
+            <a class="next" onclick="plusSlides(1)">❯</a>
+            </div></div>
+        </div>
+    </div>
+</div>
+<div class="middiv">
+    <div class="txtdiv"><h3 style="color:red; font-size: medium; font-style: italic; font-weight: bold;" >ITALIAN RESTURANT </h3><H1 style="color: black;font-size: xxlarger;font-weight: bolder;font-style: italic;"> WELCOME</h1>
+    <p>
+        Donec quis lorem nulla. Nunc eu odio mi. Morbi nec lobortis est. Sed fringilla, nunc sed imperdiet lacinia, nisl ante egestas mi, ac facilisis ligula sem id neque.
+    </p></div>
+    <div class="imgdiv"><img src="images/g-image8.png"></div>
+</div>
+<div class="discover" style="width: 100%; height: 300px; text-align: center;"><p style="color: red; font-style: italic; font-size: 48PX; font-weight: bold;">Discover </p><h1 style="color: rgb(10, 10, 10); font-size: 64px;font-weight: bolder;">PATO PLACE</h1></div>
+
+
+<div class="bcard">
+    <div class="card">
+      <img src="images/wineglass.png" alt="Image 1">
+      <p style="color: brown; font-size: 32px;" >Red Wines You Love<br><span style="color: black; font-size: 16px;">Sed ornare ligula eget tortor tempor, quis porta tellus dictum</span></p>
+      <button type="submit">Learn more--></button>
+    </div>
+    <div class="card">
+      <img src="images/intro-02.jpg" alt="Image 2">
+      <p style="color: brown; font-size: 32px;">Delicious Food<br><span style="color: black; font-size: 16px;">Aliquam eget aliquam magna, quis posuere risus ac justo ipsum nibh urna</span></p>
+      <button type="submit">Learn more--></button>
+    </div>
+    <div class="card">
+      <img src="images/building.png" alt="Image 3">
+      <p style="color: brown; font-size: 32px;">Romantic Restaurant<br><span style="color: black; font-size: 16px;">Phasellus lorem enim, luctus ut velit eget, con-vallis egestas eros.</span></p>
+      <button type="submit">Learn more--></button>
+    </div>
+  </div>
+  <div class="discover" style="width: 100%; height: 300px; text-align: center;"><p style="color: red; font-style: italic; font-size: 48PX; font-weight: bold;">Discover </p><h1 style="color: rgb(17, 16, 16); font-size: 64px;font-weight: bolder;">OUR MENU</h1></div>
+
+  <div class="grid-contner">
+    <div class="db1" id="abc"><img src="images/dinner-01.jpg"></div>
+    <div class="db2" id="abc"><img src="images/dinner-04.jpg"></div>
+    <div class="dbs" id="abc"><img src="images/dinner-05.jpg"></div>  
+    <div class="db4" id="abc"><img src="images/dinner-02.jpg"></div>
+    <div class="db5" id="abc"><img src="images/footer1.png"></div>
+    <div class="bd6" id="abc"><img src="images/footer2.png"></div>
+    
+  </div>
+  <div id="main">
+    <div id="t">
+        
+        <h4 style="color: aliceblue;">CONTACT US</h4>
+        
+       <p style="font-size: small;"> <img src="images/pilocation.png" width="25px;" height="25px;" > 8th floor, 379 Hudson St, New York, NY 10018</p>
+        <img src="images/picphone.png" width="25px;" height="25px;" >  (+1) 96 716 6879</p>
+        <img src="images/picemail.png" width="25px;" height="25px;" >  contact@site.com</p>
+        <h4 style="color: aliceblue;">OPENING TIME</h4>
+        <H6> 9:AM -10 PM<BR> EVERY DAY</H6>
+    </div>
+    <div id="t">
+        
+        <h4 style="color: aliceblue;">LATEST TWITTER</h4>
+        
+        <p style="color: red;"><img src="images/PICTWITER.png" width="25px;" height="25px;" > @colorlib</p>
+        <p style="font-size: smaller;">Activello is a good option. It has a slider built into that displays the featured image in the slider.</p>
+        <p style="font-size: smaller;">https://buff.ly/2zaSfAQ</p>
+        <p style="font-size: smaller;">21-Dec-2017</p>
+        <p style="color: red;"><img src="images/PICTWITER.png" width="25px;" height="25px;" > @colorlib</p>
+        <p style="font-size: smaller;">Activello is a good option. It has a slider built into that displays the featured image in the slider.</p>
+        <p style="font-size: smaller;">https://buff.ly/2zaSfAQ</p>
+        <p style="font-size: smaller;">21-Dec-2017</p>
+
+    </div>
+    <div id="t">
+      <h4 style="color: aliceblue;">GALLERY</h4>
+      <div class="grid-container">
+        <div class="grid-item" ><img src="images/photo-gallery-thumb-16.jpg"></div>
+        <div class="grid-item"><img src="images/photo-gallery-thumb-17.jpg"></div>
+        <div class="grid-item"><img src="images/photo-gallery-thumb-18.jpg"></div>  
+        <div class="grid-item"><img src="images/photo-gallery-thumb-19.jpg"></div>
+        <div class="grid-item"><img src="images/photo-gallery-thumb-20.jpg"></div>
+        <div class="grid-item"><img src="images/photo-gallery-thumb-21.jpg"></div>  
+        <div class="grid-item"><img src="images/photo-gallery-thumb-01.jpg"></div>
+        <div class="grid-item"><img src="images/photo-gallery-thumb-02.jpg"></div>
+        <div class="grid-item"><img src="images/photo-gallery-thumb-03.jpg"></div>  
+        <div class="grid-item"><img src="images/photo-gallery-thumb-04.jpg"></div>
+        <div class="grid-item"><img src="images/photo-gallery-thumb-05.jpg"></div>
+        <div class="grid-item"><img src="images/photo-gallery-thumb-06.jpg"></div>  
+      </div>  
+    </div>
+</div>
+      
+<div class="navbar">
+  <ul>
+    <li class="logo"><img src="images/fbb.png"></li>
+     <li class="logo"><img src="images/inst.png"></li>
+     <li class="logo"><img src="images/lnkn.png"></li>
+     <li class="logo"><img src="images/twet.png"></li>
+  </ul>
+ 
+ 
+ 
+    
+
+<div class="logomain">Copyright © 2018 All rights reserved | This template is made with  by Colorlib
+</div></div>
+  
+
+
+</body>
+
+
+
+
+
+
+
+
+<script>
+    let slideIndex = 1;
+    showSlides(slideIndex);
+    
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+    
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+    
+    function showSlides(n) {
+      let i;
+      let slides = document.getElementsByClassName("mySlides");
+      let dots = document.getElementsByClassName("dot");
+      if (n > slides.length) {slideIndex = 1}    
+      if (n < 1) {slideIndex = slides.length}
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";  
+      }
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";  
+      dots[slideIndex-1].className += " active";
+    }
+    </script>
+</html>
